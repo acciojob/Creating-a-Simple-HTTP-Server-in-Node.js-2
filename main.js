@@ -1,7 +1,14 @@
-const fs = require('fs');
+const http = require('http');
+const port = 3000;
 
-function printFileContents(filePath) {
-  // TODO: Use fs.readFile to read the file contents
-}
+const server = http.createServer((req, res) => {
+  // TODO: Send the ""Hello, world!"" response
+});
 
-// TODO: Call printFileContents with the command-line argument
+server.listen(port, () => {
+  // TODO: Log a message to the console when the server starts listening on the port
+});
+
+// DO NOT EDIT BELOW THIS LINE
+
+module.exports = { server }
